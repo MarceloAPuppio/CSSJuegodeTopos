@@ -1,0 +1,20 @@
+@mixin size($heigth-value, $width-value) {
+    height: $width-value +px;
+    width: $heigth-value +px;
+  }
+  
+
+body{ back:red;}
+*{box-sizing: border-box;}
+
+.div1{
+    @include size(100,100);
+    border: solid black 1px;
+    background: red;
+    background:linear-gradient(135deg, red 25%, transparent 25%) 50px, 
+               linear-gradient(-45deg, white 25%, transparent 25%) 0 50px, 
+               linear-gradient(45deg, transparent 75%, red 25%) 50px 0px 
+
+    // background: linear-gradient(black 33.3%, red 33.3%, red 66.6%, yellow 66.6%);
+    // background-size: 25px 25px ;
+}
